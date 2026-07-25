@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS en el Z-index</title>
+
+    <style>
+        .caja1 {
+            position: absolute;
+            left: 50px;
+            top: 100px;
+            width: 150px;
+            height: 150px;
+            background-color: lightpink;
+            z-index: 1;
+        }
+
+        .caja2 {
+            position: absolute;
+            left: 100px;
+            top: 150px;
+            width: 150px;
+            height: 150px;
+            background-color: rgb(253, 12, 153);
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Z-index</h1>
+
+    <div class="caja1"></div>
+    <div class="caja2"></div>
+
+</body>
+</html>
