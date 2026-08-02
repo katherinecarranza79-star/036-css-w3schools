@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lección 38 - HTML Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: lightgray;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            float: left;
+            width: 25%;
+            background-color: #f2f2f2;
+            padding: 15px;
+        }
+
+        article {
+            float: left;
+            width: 75%;
+            padding: 15px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: lightgray;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Mi Página Web</h1>
+</header>
+
+<section>
+
+<nav>
+    <p>Inicio</p>
+    <p>Servicios</p>
+    <p>Contacto</p>
+</nav>
+
+<article>
+
+<h2>Bienvenido</h2>
+
+<p>
+Este es un ejemplo sencillo de la estructura de una página utilizando
+header, nav, section, article y footer.
+</p>
+
+</article>
+
+</section>
+
+<footer>
+
+<p>Práctica HTML Layout</p>
+
+</footer>
+
+</body>
+
+</html>
