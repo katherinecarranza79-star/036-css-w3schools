@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS en Combinators</title>
+
+    <style>
+        div p {
+            color: blue;
+        }
+
+        div > h2 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h2>Título dentro del div</h2>
+
+        <p>Este párrafo cambia de color.</p>
+
+        <section>
+            <p>Este también pertenece al div.</p>
+        </section>
+    </div>
+
+    <p>Este párrafo queda igual.</p>
+
+</body>
+</html>
